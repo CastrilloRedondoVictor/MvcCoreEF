@@ -1,0 +1,26 @@
+﻿<h1 class="mb-3">Nuevo Hospital</h1>
+<a asp-controller="Hospitales" asp-action="Index" class="btn btn-outline-primary mb-5">Volver</a>
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Hospital Cod</label>
+        <input class="form-control" type="text" name="HospitalCod" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input class="form-control" type="text" name="Nombre" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Direccion</label>
+        <input class="form-control" type="text" name="Direccion" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Telefono</label>
+        <input class="form-control" type="text" name="Telefono" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Camas</label>
+        <input class="form-control" type="text" name="NumCama" />
+    </div>
+    <button class="btn btn-primary" type="submit">Añadir</button>
+</form>

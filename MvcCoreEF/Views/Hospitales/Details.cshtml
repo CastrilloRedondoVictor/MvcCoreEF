@@ -1,0 +1,7 @@
+﻿@model Hospital
+
+<h1 class="mb-3">Hospital @Model.Nombre</h1>
+<a asp-controller="Hospitales" asp-action="Index" class="btn btn-outline-primary mb-5">Volver</a>
+<h4><strong>Dirección: </strong>@Model.Direccion</h4>
+<h4><strong>Teléfono: </strong>@Model.Telefono</h4>
+<h4><strong>Camas: </strong>@Model.NumCama</h4>
