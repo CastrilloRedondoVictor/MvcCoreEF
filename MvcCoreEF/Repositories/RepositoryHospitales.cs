@@ -42,13 +42,6 @@ namespace MvcCoreEF.Repositories
             await this.context.SaveChangesAsync();
         }
 
-        public async Task DeteleHospitalAsync(int id)
-        {
-            Hospital hospital = await this.FindHospitalAsync(id);
-            this.context.Hospitales.Remove(hospital);
-            await this.context.SaveChangesAsync();
-        }
-
         public async Task UpdateHospitalAsync(int idHospital, string nombre, string direccion, string telefono, int camas)
         {
             Hospital hospital = await this.FindHospitalAsync(idHospital);
@@ -57,6 +50,13 @@ namespace MvcCoreEF.Repositories
             hospital.Telefono = telefono;
             hospital.NumCama = camas;
 
+            await this.context.SaveChangesAsync();
+        }
+
+        public async Task DeleteHospitalAsync(int idHospital)
+        {
+            Hospital hospital = await this.FindHospitalAsync(idHospital);
+            this.context.Hospitales.Remove(hospital);
             await this.context.SaveChangesAsync();
         }
 

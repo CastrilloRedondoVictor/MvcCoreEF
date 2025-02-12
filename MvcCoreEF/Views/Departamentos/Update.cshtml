@@ -1,0 +1,17 @@
+﻿@model Departamento
+
+<h1 class="mb-3">Editar Departamento @Model.DeptNo</h1>
+<a asp-controller="Departamentos" asp-action="Index" class="btn btn-outline-primary mb-5">Volver</a>
+
+<form method="post">
+    <input class="form-control" type="hidden" name="DeptNo" value="@Model.DeptNo" />
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input class="form-control" type="text" name="Dnombre" value="@Model.Dnombre" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Localización</label>
+        <input class="form-control" type="text" name="Loc" value="@Model.Loc" />
+    </div>
+    <button class="btn btn-primary" type="submit">Editar</button>
+</form>

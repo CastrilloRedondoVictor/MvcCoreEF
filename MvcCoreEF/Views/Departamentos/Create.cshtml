@@ -1,0 +1,18 @@
+﻿<h1 class="mb-3">Nuevo Departamento</h1>
+<a asp-controller="Departamentos" asp-action="Index" class="btn btn-outline-primary mb-5">Volver</a>
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Número Departamento</label>
+        <input class="form-control" type="text" name="DeptNo" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input class="form-control" type="text" name="Dnombre" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Localización</label>
+        <input class="form-control" type="text" name="Loc" />
+    </div>
+    <button class="btn btn-primary" type="submit">Añadir</button>
+</form>
